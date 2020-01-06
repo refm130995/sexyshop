@@ -1,0 +1,66 @@
+page-list {
+    .card-header {
+        font-family:  'PT Sans', sans-serif;
+        font-size: .9em;
+      }
+      .segmenbuttom{
+        max-width: 27px;
+        position: relative;
+        margin: 0 auto;
+        vertical-align: middle;
+      }
+      ion-segment{
+        background: #222;
+        padding: 10px;
+        padding-bottom: 10px;
+      }
+      .segment-button{
+        border-color: transparent !important;
+        /* padding: 10px; */
+        background-color: #595959 !important;
+      }
+      .segment-ios .segment-button{
+        border-color: transparent !important;
+        /* padding: 10px; */
+        background-color: #595959 !important;
+      }
+      .segment-ios .segment-button.segment-activated{
+        background: white;
+        border: white;
+      }
+
+      article img {
+        height: 70px;
+        position: relative;
+        margin-left: 97%;
+        border-radius: 8px;
+      }
+
+      article img:hover {
+
+        margin-left: 90%;
+        transition: all 0.5s ease;
+
+      }
+/*  article img {
+        height: 70px;
+        width: 82px;
+        position: relative;
+        border-radius: 8px;
+      }
+
+      article img:hover {
+
+        margin-left: 90%;
+        transition: all 0.5s ease;
+
+      } */
+      article h3 {
+        margin-top: -75px;
+        position: relative;
+        width: 90%;
+
+    
+      }
+
+     }

@@ -1,0 +1,51 @@
+<ion-header>
+  <ion-navbar color="header">
+    <button ion-button menuToggle>
+      <ion-icon name="menu">
+      </ion-icon>
+    </button>
+  <ion-title>
+    <img style="width: 60%; max-width: 200px;" src="assets/image/home_header.png">
+  </ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only light color="shadowlite" (click)="goHome()">  
+        <ion-icon name="home" >
+        </ion-icon>
+      </button>
+      <button ion-button icon-only light class="has-icon icon-only has-badge" (click)="getCart()">
+        <ion-icon class="ion-ios-basket-outline item-icon">
+        </ion-icon>
+   <!--      <ion-badge class="badge badge-light" *ngIf="values.count != 0">{{values.count}}
+        </ion-badge> -->
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+<ion-content class="home">
+  <!--  <button ion-button (click)="goDemo()">Demo vibración</button> -->
+   <!-- <button ion-button (click)="goFlow()">Pagar flow</button> -->
+<!--    <ion-spinner *ngIf="!service?.banners" name="crescent">
+   </ion-spinner>
+ <div *ngIf="service?.banners" class="home-banners">
+   <ion-slides pager="true" loop="true" autoplay="5800">
+     <ion-slide *ngFor='let value of service.banners'>
+       <img src="{{value}}">
+     </ion-slide>
+   </ion-slides>
+ </div> -->
+ <ion-spinner *ngIf="!categories" name="crescent">
+</ion-spinner>
+<ng-container *ngFor="let category of categories">
+  <div *ngIf="category.name != 'uncategorized'" [class]="category.slug" style="display: table; height: 26%; position: relative; width: 100%;" (click)="goListaTips(category.id)" >
+    <div  style="font-family: 'PT Sans', sans-serif; color: #FFF; font-size: 1.6em; font-weight: bold;  display: table-cell;
+    vertical-align: middle;
+    text-align: center;" >
+       <!-- <ion-icon name="calendar" ></ion-icon><br> -->
+      {{category.name}}
+      <h3>{{category.count}} NOTICIAS</h3>
+    </div>
+  </div>
+</ng-container>
+
+  
+</ion-content>

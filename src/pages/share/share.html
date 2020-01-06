@@ -1,0 +1,61 @@
+<ion-header>
+  <ion-navbar color="header">
+    <button ion-button menuToggle>
+      <ion-icon name="menu">
+      </ion-icon>
+    </button>
+    <ion-title>
+      <img style="width: 60%; max-width: 200px;" src="assets/image/home_header.png">
+    </ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only light color="shadowlite" (click)="getSearch()">
+        <ion-icon ios="ios-search" md="md-search">
+        </ion-icon>
+      </button>
+      <button ion-button icon-only light class="has-icon icon-only has-badge" (click)="getCart()">
+        <ion-icon class="ion-ios-basket-outline item-icon">
+        </ion-icon>
+        <!--         <ion-badge class="badge badge-light" *ngIf="values.count != 0">{{values.count}}
+        </ion-badge> -->
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+ 
+<ion-content padding style="background-image: url('assets/image/fondo-share.jpg'); background-position: center top; background-repeat: no-repeat; background-size: cover; ">
+<div *ngIf="!muestraCupon" >
+  <p *ngFor="let d of datos" [innerHTML]="d.content.rendered" text-center style="color: #222222 !important;"></p>
+</div>
+<div *ngIf="muestraCupon" >
+  <h2 text-center >
+    Su cupón de descuento es <br>{{ cuponDescuento }} 
+  </h2>
+</div>
+</ion-content>
+<ion-footer no-border>
+  <ion-grid>
+    <ion-row>
+      <ion-col col-3>
+        <button ion-button icon-only clear (click)="shareFacebook()">
+          <ion-icon name="logo-facebook" color="light"></ion-icon>
+        </button>
+      </ion-col>
+      <ion-col col-3>
+        <button ion-button clear icon-only (click)="shareInstagram()">
+          <ion-icon name="logo-instagram" color="light"></ion-icon>
+        </button>
+      </ion-col>
+      <ion-col col-3>
+        <button ion-button clear icon-only (click)="shareTwitter()">
+          <ion-icon name="logo-twitter" color="light"></ion-icon>
+        </button>
+      </ion-col>
+      <ion-col col-3>
+        <button ion-button clear icon-only (click)="shareWhatsapp()" >
+          <ion-icon name="logo-whatsapp" color="light"></ion-icon>
+        </button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-footer>

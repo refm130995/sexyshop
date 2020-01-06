@@ -1,0 +1,68 @@
+<ion-header>
+  <ion-navbar color="header">
+    <button ion-button menuToggle>
+      <ion-icon name="menu">
+      </ion-icon>
+    </button>
+    <ion-title text-wrap text-center style="font-family: Yanone Kaffeesatz, sans-serif;">DATOS DE DESPACHO
+    </ion-title>
+    <ion-buttons end>
+        <button ion-button icon-only light class="has-icon icon-only has-badge" (click)="getCart()">  
+          <ion-icon class="item-icon ion-ios-basket-outline">
+          </ion-icon>
+          <ion-badge class="badge badge-light" *ngIf="values.count">{{values.count}}
+          </ion-badge>
+        </button>
+      </ion-buttons>
+  </ion-navbar>
+</ion-header>
+<ion-content text-wrap class="account-address">
+<ion-spinner *ngIf="!addresses" name="crescent" style="display:block; margin-left: auto; margin-right:auto; margin-top: 5px; margin-bottom:5px" ></ion-spinner>
+   <div *ngIf="addresses" class="address">
+      <div *ngIf="addresses.customer.billing_address">
+      <ion-card style="background-color:#F4F4F4;" >
+<!--         <ion-card-header style="background-color: #CDCDCD; font-family: Yanone Kaffeesatz, sans-serif; text-transform: uppercase;">
+          {{"BillingAddress" | translate}}
+        </ion-card-header> -->
+        <ion-card-content style="margin-top: 10px; font-family: Yanone Kaffeesatz, sans-serif;">
+           <b text-uppercase>Nombre completo</b>
+          <p>{{addresses.customer.billing_address.first_name}} {{addresses.customer.billing_address.last_name}}</p>
+          <br *ngIf="addresses.customer.billing_address.first_name">
+           <b text-uppercase>Dirección de despacho</b>
+          <p>{{addresses.customer.billing_address.address_1}}</p>
+          <br *ngIf="addresses.customer.billing_address.address_1">
+           <b text-uppercase>Ciudad y región</b> 
+        <!--   {{addresses.customer.billing_address.address_2}}<br *ngIf="addresses.customer.billing_address.address_2"> -->
+        <p> {{addresses.customer.billing_address.city}} {{addresses.customer.billing_address.state}}</p>
+          <br *ngIf="addresses.customer.billing_address.city">
+           <b text-uppercase>Número telefónico</b>
+          <p>  {{addresses.customer.billing_address.phone}}</p>
+          <br *ngIf="addresses.customer.billing_address.phone">
+           <b text-uppercase>Correo electrónico</b>
+          <p> {{addresses.customer.billing_address.email}}</p>
+          <br *ngIf="addresses.customer.billing_address.email">
+       <!--    {{addresses.customer.billing_address.country}} {{addresses.customer.billing_address.postcode}}<br *ngIf="addresses.customer.billing_address.postcode"> -->
+        </ion-card-content>
+      </ion-card>
+      </div>
+      <div *ngIf="addresses.customer.shipping_address">
+<!--       <ion-card>
+        <ion-card-header style="background-color: #f9f9f9; font-family: Yanone Kaffeesatz, sans-serif;">
+          {{"ShippingAddress" | translate}}
+        </ion-card-header>
+        <ion-card-content style="margin-top: 10px; font-family: Yanone Kaffeesatz, sans-serif;">
+          {{addresses.customer.shipping_address.first_name}} {{addresses.customer.shipping_address.last_name}}<br *ngIf="addresses.customer.shipping_address.first_name">
+          {{addresses.customer.shipping_address.address_1}}<br *ngIf="addresses.customer.shipping_address.address_1">
+          {{addresses.customer.shipping_address.address_2}}<br *ngIf="addresses.customer.shipping_address.address_2">
+          {{addresses.customer.shipping_address.city}} {{addresses.customer.shipping_address.state}}<br *ngIf="addresses.customer.shipping_address.city">
+          {{addresses.customer.shipping_address.phone}}<br *ngIf="addresses.customer.shipping_address.phone">
+          {{addresses.customer.shipping_address.email}}<br *ngIf="addresses.customer.shipping_address.email">
+          {{addresses.customer.shipping_address.country}} {{addresses.customer.shipping_address.postcode}}<br>
+        </ion-card-content>
+      </ion-card> -->
+      </div>
+      <div text-center>
+         <button ion-button  color="dark" outline round  type="submit" class="round"  text-uppercase (click)="editAddress()" icon-left > <ion-icon name="clipboard" ></ion-icon> Editar datos</button>
+      </div>
+   </div>
+</ion-content>

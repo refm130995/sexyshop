@@ -1,0 +1,63 @@
+<ion-header>
+  <ion-navbar color="header">
+    <button ion-button menuToggle>
+      <ion-icon name="menu">
+      </ion-icon>
+    </button>
+    <ion-title>
+      <img style="width: 60%; max-width: 200px; border-radius: 0px !important;" src="assets/image/home_header.png">
+    </ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only light color="shadowlite" (click)="goHome()">   
+        <ion-icon name="home" >
+        </ion-icon>
+      </button>
+      <button ion-button icon-only light class="has-icon icon-only has-badge" (click)="getCart()">
+        <ion-icon class="ion-ios-basket-outline item-icon">
+        </ion-icon>
+        <!--      <ion-badge class="badge badge-light" *ngIf="values.count != 0">{{values.count}}
+        </ion-badge> -->
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content >
+  <img class="imagen" [src]="notice.better_featured_image.source_url"/>
+  <div padding >
+  
+
+        <h2 text-center [innerHTML]="notice.title.rendered"></h2>
+      
+          <p [innerHTML]="notice.content.rendered"></p>
+     
+
+  </div>
+</ion-content>
+<ion-footer>
+  <ion-grid>
+    <ion-row>
+      <ion-col col-3>
+        <button ion-button icon-only clear (click)="shareFacebook(notice.title.rendered, notice.better_featured_image.source_url, notice.link)">
+          <ion-icon name="logo-facebook" color="facebook"></ion-icon>
+        </button>
+      </ion-col>
+      <ion-col col-3>
+        <button ion-button clear icon-only (click)="shareInstagram(notice.title.rendered, notice.better_featured_image.source_url)">
+          <ion-icon name="logo-instagram" color="instagram"></ion-icon>
+        </button>
+      </ion-col>
+      <ion-col col-3>
+        <button ion-button clear icon-only (click)="shareTwitter(notice.title.rendered, notice.better_featured_image.source_url, notice.link)">
+          <ion-icon name="logo-twitter" color="twitter"></ion-icon>
+        </button>
+      </ion-col>
+      <ion-col col-3>
+        <button ion-button clear icon-only (click)="shareWhatsapp(notice.title.rendered, notice.better_featured_image.source_url, notice.link)" >
+          <ion-icon name="logo-whatsapp" color="whatsapp"></ion-icon>
+        </button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-footer>

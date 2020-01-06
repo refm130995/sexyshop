@@ -1,0 +1,114 @@
+page-categories {
+/*   .Cuerpos {
+    background-color: #B1D9EA !important;
+    color: white !important;
+  }
+  .Dinero {
+    background-color: #5B9EC4 !important;
+    color: white !important;
+  }
+  .Energía {
+    background-color: #5C7A95 !important;
+    color: white !important;
+  }
+  .Relaciones {
+    background-color: #4D565F !important;
+    color: white !important;
+  }
+  .Trabajo {
+    background-color: #900C3F !important;
+    color: white !important;
+  } */
+
+  .caja {
+    color: white !important;
+    width: 100%;
+    height: 26%;
+  }
+
+  .juguetes-adultos {
+    background-image:url('../assets/image/88.jpg');
+/*     background: -webkit-linear-gradient(left, #d6f9ff 0%,#9ee8fa 100%);
+    background: linear-gradient(to right, #26efda 0%,#1695b2 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d6f9ff', endColorstr='#9ee8fa',GradientType=1 ); */
+    color: white !important;
+    width: 100%;
+    height: 25%;
+    background-size: cover;
+    text-transform: uppercase;
+  }
+
+  .romance {
+    background-image:url('../assets/image/90.jpg');
+/*     background: -webkit-linear-gradient(left, #ea6197 0%,#ce7d5b 100%);
+    background: linear-gradient(to right, #ea6197 0%,#ce7d5b 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ea6197', endColorstr='#ce7d5b',GradientType=1 ); */
+    color: white !important;
+    width: 100%;
+    height: 25%;
+    background-size: cover;
+    text-transform: uppercase;
+  }
+
+  .sexualidad {
+    background-image:url('../assets/image/87.jpg');
+    background-size: cover;
+/*     background: -webkit-linear-gradient(left, #6d93bf 0%,#ae3ab7 100%);
+    background: linear-gradient(to right, #6d93bf 0%,#ae3ab7 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6d93bf', endColorstr='#ae3ab7',GradientType=1 ); */
+    color: white !important;
+    width: 100%;
+    height: 25%;
+    text-transform: uppercase;
+  }
+
+  .tips {
+    background-image:url('../assets/image/89.jpg');
+/*     background: -webkit-linear-gradient(left, #ea6197 0%,#ce7d5b 100%);
+    background: linear-gradient(to right, #ea6197 0%,#ce7d5b 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ea6197', endColorstr='#ce7d5b',GradientType=1 ); */
+    color: white !important;
+    width: 100%;
+    height: 25%;
+    background-size: cover;
+    text-transform: uppercase;
+  }
+
+  h3 {
+    font-size: 1.4rem;
+    margin: 0;
+}
+  .card-background-page {
+
+    ion-card {
+      position: relative;
+      text-align: center;
+      min-height: 190px;
+    }
+  
+    .card-title {
+      font-family: 'PT Sans', sans-serif;
+      position: absolute;
+      bottom: 0px;
+      font-size: 1em;
+      width: 100%;
+      color: #fff;
+      background-color: #000000;
+      padding: 10px 5px;
+      opacity: .8;
+    }
+  
+    .card-subtitle {
+      font-size: 1.0em;
+      position: absolute;
+      top: 52%;
+      width: 100%;
+      color: #fff;
+    }
+  
+  }
+  .opaco {
+    opacity: .8;
+  }
+  
+}

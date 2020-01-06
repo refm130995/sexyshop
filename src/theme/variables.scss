@@ -1,0 +1,74 @@
+
+@import "ionic.globals";
+
+$text-color:        #000;
+$background-color:  #fff;
+
+$colors: (
+  primary:    #387ef5,
+  secondary:  #0ED44F,
+  verde:  #0ED44F,
+  vinotinto: #be1e2d,
+  danger:     #f25362,
+  light:      #f4f4f4,
+  dark:       #222,
+  shadow:     #bf4080,
+  shadowlite: #f9ebf2,
+
+  gris-oscuro:#6C6D70,
+  gris:       #595959,
+  gris1:       #595959,
+  gris2:       #595959,
+  gris3:       #595959,
+  favorite:   #69BB7B,
+  oscuro:     #37464C,
+  naranja:    #E57810,
+  beige:      #F9F7EB,
+  rojo: #6E2C00,
+  azul: #006CAF,
+  play: #E57810,
+  amarillo:#E57810,
+  blanco:#FFFFFF,
+  azul1:#EFFAFD,
+  azul2:#808B96,
+  azul3:#566573,
+  azul4:#2C3E50,
+  azul5:#273746,
+  azul6:#212F3D,
+  azul7:#023D59,
+  logo1:#EEC644,
+  logo2:#E94C45,
+  logo3:#D65321,
+  logo4:#C03830,
+  facebook:#3B5998,
+  twitter:#28A9E0,
+  instagram:#D12D79,
+  whatsapp:#189D0E,
+
+  //customise color here
+  header: #BE1E2D,
+  button-color: #f25362,
+  side-heading-color:  #f25362
+
+);
+
+$shadowlite: #f9ebf2;
+$shadow: #bf4080;
+$side-heading-color:  #BE1E2D;
+$header: #BE1E2D;
+$button-color: #32db64;
+$toggle-button-color: #32db64;
+$min-banner-height:  7em;
+$min-home-category-height:  3.2em;
+$min-product-height:  12em;
+$min-product-slider-height:  16em;
+$menu-background-color: #fff;
+$menu-text-color: #111;
+$menu-border-color: #ececec;
+
+
+@import "ionic.theme.default";
+
+
+$ionicons-font-path: "../assets/fonts";
+@import "ionicons";

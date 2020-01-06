@@ -1,0 +1,84 @@
+<ion-header>
+    <ion-navbar color="header">
+      <button ion-button menuToggle>
+        <ion-icon name="menu">
+        </ion-icon>
+      </button>
+      <ion-title  text-center >CONTACTO
+      </ion-title>
+      <ion-buttons end>
+          <button ion-button icon-only light class="has-icon icon-only has-badge" (click)="getCart()">
+            <ion-icon class="item-icon ion-ios-basket-outline">
+            </ion-icon>
+            <ion-badge class="badge badge-light" *ngIf="values.count">{{values.count}} 
+            </ion-badge>
+          </button>
+        </ion-buttons>
+    </ion-navbar>
+  </ion-header>
+<ion-content padding >
+  <div text-center>
+    <p>Si desea comunicarse con nosotros, puede llamarnos haciendo click en el siguiente botón en horario de oficinas o llenar el siguiente formulario de contacto</p>
+<br>
+    <button ion-button style="border-radius: 25px;" (click)="doCall(telefonoTx)" round outline color="dark" icon-left >
+      <ion-icon name="phone-portrait"></ion-icon>Llamar</button>
+
+  </div><br>
+  <form [formGroup]="myFormSop" (ngSubmit)="sendEmail()" novalidate>
+  <ion-list>
+
+            
+          <ion-item>
+         
+            <ion-label stacked>Nombre completo</ion-label>
+            <ion-input type="text" formControlName="name" [(ngModel)]="name"></ion-input>
+          </ion-item>
+          <ion-item *ngIf="myFormSop.get('name').errors && myFormSop.get('name').dirty">
+            <p color="danger" ion-text *ngIf="myFormSop.get('name').hasError('required')">Este campo es requerido</p>
+            <p color="danger" ion-text *ngIf="myFormSop.get('name').hasError('minlength')">Este nombre es muy corto</p>
+            <p color="danger" ion-text *ngIf="myFormSop.get('name').hasError('maxlength')">Este nombre es muy largo</p>
+          </ion-item>
+ 
+          <ion-item>
+            <ion-label stacked>Teléfono</ion-label>
+            <ion-input style="padding-left:20px; background-image: url('assets/image/add.jpg'); background-repeat: no-repeat; background-position: top left; " type="tel" [min]="7" [max]="20" formControlName="phone" [(ngModel)]="phone"></ion-input>
+          </ion-item>
+          <ion-item *ngIf="myFormSop.get('phone').errors && myFormSop.get('phone').dirty">
+            <p color="danger" ion-text *ngIf="myFormSop.get('phone').hasError('required')">Este campo es requerido</p>
+            <p color="danger" ion-text *ngIf="myFormSop.get('phone').hasError('minlength')">Este teléfono es muy corto</p>
+            <p color="danger" ion-text *ngIf="myFormSop.get('phone').hasError('maxlength')">Este teléfono es muy largo</p>
+          </ion-item>
+  
+          <ion-item>
+            <ion-label stacked>Email</ion-label>
+            <ion-input type="email" required formControlName="emailTX" [pattern]="emailPattern" [(ngModel)]="emailTX"></ion-input>
+          </ion-item>
+          <ion-item *ngIf="myFormSop.get('emailTX').errors && myFormSop.get('emailTX').dirty">
+            <p color="danger" ion-text *ngIf="myFormSop.get('emailTX').hasError('required')">Este campo es requerido</p>
+            <!-- <p color="danger" ion-text *ngIf="myFormSop.get('emailTX').hasError('minlength')">This email is very short</p> -->
+            <!-- <p color="danger" ion-text *ngIf="myFormSop.get('emailTX').hasError('email')">Invalid email</p> -->
+            <p color="danger" ion-text *ngIf="myFormSop.get('emailTX').hasError('pattern')">Email inválido</p>
+          </ion-item>
+  
+          
+    
+          <ion-item>
+            <ion-label stacked>Mensaje para SexyShop</ion-label>
+            <ion-input formControlName="message" [(ngModel)]="message"></ion-input>
+          </ion-item>
+
+
+
+
+  </ion-list>
+<div text-center >
+  <button ion-button color="dark" style="border-radius: 25px;" outline round icon-right  type="submit" [disabled]="myFormSop.invalid">
+     ENVIAR MENSAJE<ion-icon name="send"></ion-icon></button>
+    </div>
+  </form>  
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+</ion-content>

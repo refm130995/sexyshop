@@ -1,0 +1,71 @@
+<ion-header>
+  <ion-navbar color="header">
+    <button ion-button menuToggle>
+      <ion-icon name="menu">
+      </ion-icon>
+    </button>
+    <ion-title>
+      <img style="width: 60%; max-width: 200px;" src="assets/image/home_header.png">
+    </ion-title>
+    <ion-buttons end>
+      <button *ngIf="mostrar_search" ion-button icon-only (click)="hideSearch()">
+        <ion-icon name="search"></ion-icon> 
+      </button>
+      <button *ngIf="!mostrar_search" ion-button icon-only (click)="showSearch()">
+        <ion-icon name="search"></ion-icon>
+      </button>
+      <button ion-button icon-only light class="has-icon icon-only has-badge" (click)="getCart()"> 
+        <ion-icon class="ion-ios-basket-outline item-icon">
+        </ion-icon>
+        <!--      <ion-badge class="badge badge-light" *ngIf="values.count != 0">{{values.count}}
+        </ion-badge> -->
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+    <ion-searchbar *ngIf="mostrar_search" class="searchBar" [placeholder]="buscadorPlace" [(ngModel)]="searchText" (ionInput)="filtrar()"></ion-searchbar>
+
+  <ion-spinner *ngIf="!notices" name="crescent">
+  </ion-spinner>
+  <div padding *ngFor="let notice of postsShow" >
+    <!--     <ion-card (click)="goDetail(notice)">
+      <img src="../../assets/image/login_logo.png" />
+      <div text-center style=" font-family: 'Yanone Kaffeesatz', sans-serif;font-size: 2rem;" [innerHTML]="notice.title.rendered">Titulo</div>
+      <div style=" font-family: 'Yanone Kaffeesatz', sans-serif;" [innerHTML]="notice.excerpt.rendered"></div>
+    </ion-card> -->
+    <article *ngFor="let notice of postsShow" (click)="goDetail(notice)" style="margin-bottom: 30px;">
+      <img *ngIf="notice.better_featured_image?.source_url"  [src]="notice.better_featured_image?.source_url"/>
+
+      <h3 class="content-lead-title"><b [innerHTML]="notice.title?.rendered"></b></h3>
+      <div class="content-lead-excerpt">
+          <p style="font-size: 1rem;">
+             <ion-icon name="clock"></ion-icon> <span>{{notice?.date | moment:'LLL'}}</span>
+            </p>
+      </div>
+
+    </article>
+<!--  <article style="margin-bottom: 30px;">
+      <ion-grid >
+        <ion-row>
+          <ion-col col-8>
+
+            <h3 class="content-lead-title"><b [innerHTML]="notice.title.rendered"></b></h3>
+            <div class="content-lead-excerpt">
+                <p style="font-size: 1rem;">
+                   <ion-icon name="clock"></ion-icon> <span>{{notice.date | moment:'LLL'}}</span>
+                  </p>
+            </div>
+          </ion-col>
+          <ion-col col-4>
+            <img [src]="notice.better_featured_image.source_url"/>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+
+
+    </article> -->   
+  </div>
+</ion-content>

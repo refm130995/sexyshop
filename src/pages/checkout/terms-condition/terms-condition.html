@@ -1,0 +1,18 @@
+<ion-header>
+   <ion-navbar color="header">
+      <ion-title text-center>{{"TermsConditions" | translate}}</ion-title>
+      <ion-buttons end>
+            <button ion-button icon-only light class="has-icon icon-only has-badge" (click)="getCart()">
+              <ion-icon class="item-icon ion-ios-basket-outline">
+              </ion-icon>
+              <ion-badge class="badge badge-light" *ngIf="values.count">{{values.count}}
+              </ion-badge>
+            </button>
+          </ion-buttons> 
+   </ion-navbar>
+</ion-header>
+<ion-content padding class="terms-condition">
+   <div class="terms">
+   <p>Add terms and conditions here</p>
+   </div>
+</ion-content>

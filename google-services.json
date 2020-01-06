@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1001243426949",
+    "firebase_url": "https://sexyshop-2748e.firebaseio.com",
+    "project_id": "sexyshop-2748e",
+    "storage_bucket": "sexyshop-2748e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1001243426949:android:72e256ea593f23bc",
+        "android_client_info": {
+          "package_name": "cl.appi.sexyshop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1001243426949-dnltqtnfcssuam45vcrkdmm0cq90b848.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "cl.appi.sexyshop",
+            "certificate_hash": "1d51571e5761276168b270d6c550e913df5862d8"
+          }
+        },
+        {
+          "client_id": "1001243426949-kp2mjujnond6d6qijr09pdbq9ecshgj3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBX_exhoYzJBCtqQEJ6SIh4A8b7o2J6yf0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1001243426949-kp2mjujnond6d6qijr09pdbq9ecshgj3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

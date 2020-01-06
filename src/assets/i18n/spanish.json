@@ -1,0 +1,1058 @@
+
+{
+ 
+  "Eglish": "Inglés",
+  "Hindi": "hindi",
+  "French": "francés",
+  "Spanish": "Español",
+  "Russian": "ruso",
+  "Arabic": "Arábica",
+  "Italian": "italiano",
+  "Korean": "coreano",
+  "Chinese": "chino",
+  "SelectLanguage": "Seleccione el idioma",
+  "Name": "Nombre",
+  "Default": "Orden por defecto",
+  "Variation" : "Variación",
+  "ProceedtoCCAvenue": "Proceder a CC Avenue",
+  "DeliveryTime": "El tiempo de entrega",
+  "DeliveryDate": "Fecha de entrega",
+  "GiftCardPromo": "Promoción de tarjetas de regalo",
+  "Haveacoupon?Enterbelow" : "¿Tiene un cupón? Ingrese abajo",
+  "Delete" : "Borrar",
+  "AddToCart" : "Añadir a la cesta",
+  "InStock": "En stock",	
+  "EmptyWishlistViewMessage": "Vacío Lista de deseos Ver mensaje",
+  "Wishlist": "Lista de deseos",
+  "AccountInfo": "Información de cuenta",
+  "RegisterAccount": "Registrar Cuenta",
+  "Cancel": "Cancelar",
+  "LogIn": "Iniciar sesión",
+  "Shop": "Tienda",
+  "ProductName": "nombre del producto",
+  "SameForShipping": "Lo mismo para el envío",
+  "Signup": "¿No tiene una cuenta? Registrate aquí",
+  "Account": "Cuenta",
+  "Address": "Datos de envío",
+  "Logout": "Salir",
+  "Welcome": "Bienvenido",
+  "Email": "Email",
+  "password": "contraseña",
+  "FirstName": "Nombre",
+  "LastName": "Apellido",
+  "Company": "Empresa",
+  "Phone": "Teléfono",
+  "StreetAddress": "Dirección de envío",
+  "City": "Ciudad",
+  "Postcode": "Código postal",
+  "Country": "País",
+  "State": "Región",
+  "AddressBook": "Datos de envío",
+  "EditAddress": "Editar dirección",
+  "ShippingAddress": "Dirección de envío",
+  "Save": "Guardar",
+  "ResetPassword": "Restablecer la contraseña",
+  "Enteremailaddress": "Introducir la dirección de correo electrónico",
+  "ForgotPasswordReset": "Escribe tu correo electrónico registrado y te enviaremos un email con los pasos para reestablecer la clave, será muy rápido",
+  "reset": "Reiniciar",
+  "OrderInfo": "Solicitar Información",
+  "OrderNumber": "Número de orden",
+  "Date": "Fecha",
+  "PaymentMethod": "Método de pago",
+  "BillingAddress": "Datos de envío",
+  "ShippingMethod": "Método de envío",
+  "ProductDetails": "Detalles del producto",
+  "Totals": "Total",
+  "SubTotal": "Total parcial",
+  "ShippingTotal": "envío total",
+  "TaxTotal": "Total impuesto",
+  "GrandTotal": "Gran total",
+  "LastOrders": "Últimas órdenes",
+  "Pleaselogin": "Por favor Iniciar sesión",
+  "Youmustlogintoseeyourorders": "Debes acceder para ver sus pedidos",
+  "username": "nombre de usuario",
+  "ForgotPassword": "Recupera tu contraseña",
+  "Therearenoorders.": "Aún no tienes ningún pedido, vamos anímate y realiza tu primer pedido, es muy fácil y de seguro disfrutarás mucho los productos que adquieras",
+  "Orderdate": "Fecha de orden",
+  "Shipto": "Envié a",
+  "Status": "Estado",
+  "Quantity": "Cantidad",
+  "ViewDetails": "Ver detalles",
+  "Cart": "Cesta de compras",
+  "Yourcartisempty!": "¡Tu carrito esta vacío!",
+  "emptycartrestuarent": "Añadir un poco de deliciosa comida disponible en nuestro menú a la caja.",
+  "BrowseOurMenu": "Explorar nuestro menú",
+  "Price": "Precio",
+  "Selectashippingmethod": "Seleccionar un método de envío",
+  "Coupons": "Cupones",
+  "Grand Total": "Gran total",
+  "Checkout": "Realizar compra",
+  "Returningcustomer?Loginhere..": "¿Eres Cliente? Entra aquí..",
+  "CreateAccount": "Crear una cuenta",
+  "Createanaccounttext": " Crear una cuenta mediante la introducción de la información a continuación. Si usted es un cliente que vuelve por favor entre en la parte superior de la página.",
+  "Yourorder": "Su pedido",
+  "Coupon": "Cupón",
+  "ProceedtopayPal": "Proceder a PayPal",
+  "ProceedtoPayUMoney": "Proceder a PayU dinero",
+  "CardNumber": "Número de tarjeta",
+  "StripeCardDetails": "Detalles de la raya de la tarjeta",
+  "ExpiryMonth": "Meses de vencimiento",
+  "ExpiryYear": "Año de caducidad",
+  "CardCode": "Código de la tarjeta",
+  "SelectPaymentMethod": "Seleccione el método de pago",
+  "OrderSummary": "Resumen del pedido",
+  "OrderReceived": "Orden recibida",
+  "orderreceivedtext": "Gracias. Tu orden ha sido recibida.",
+  "Totalquantity": "Cantidad total",
+  "OrderDetails": "Detalles fin",
+  "Shipping": "Envío",
+  "Continue": "Continuar",
+  "Home": "Casa",
+  "UrbanKitchen": "Urban Kitchen",
+  "Product": "Producto",
+  "OUTOFSTOCK": "AGOTADO",
+  "Options": "Opciones",
+  "Selectoption": "Seleccionar opción",
+  "ShortDescription": "Descripción",
+  "Description": "Especificaciones",
+  "ShowReviews": "Ver críticas",
+  "Reviews": "opiniones",
+  "Products": "productos",
+  "Categories": "Categorías",
+  "Add": "+",
+  "Saving...": "Ahorro...",
+  "resetting...": "restablecer ...",
+  "Logging In...": "Iniciar sesión...",
+  "Registering...": "Registrando ...",
+  "ContinueShopping": "Seguir comprando",
+  "AddToEmptyCart": "Añadir algunos productos disponibles en nuestro menú a la comprobación",
+  "Remove": "retirar",
+  "Apply": "Aplicar",
+  "ContinueCheckout": "Continuar con el registro",
+  "PleaseWait": "Por favor espera",
+  "PlaceOrder": "Realizar pago",
+  "TermsConditions" : "TÉRMINOS Y CONDICIONES",
+  "IAgree" : "Estoy de acuerdo",
+  "ProductsSale" : "Productos en oferta",
+  "Shopbycategories" : "Selecciona una categoría",
+  "Subtotal_ex_tax" : "Subtotal sin iva",
+  "Sort" : "Ordenar por",
+  "masProductos" : "Cargando más productos",
+  "YourOrders" : "Detalle de tu pedido",
+  "Share App": "Compartir app",
+  "Terms & Conditions": "TÉRMINOS Y CONDICIONES",
+  "About us":"Acerca de",
+  "Contact Us":"Contáctenos",
+  "Edit Address":"Editar Dirección",
+  "Billing Address":"Dirección de Envío",
+  "First Name": "Nombre",
+  "Last Name":"Apellido",
+  "Street Address":"Dirección",
+  "Same For Shipping": "Lo mismo para envíos"
+}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
